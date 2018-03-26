@@ -35,7 +35,11 @@ checkReg($fname , $lname, $email, $phone, $birthday, $gender, $password);
 register($fname , $lname, $email, $phone, $birthday, $gender, $password);
 
 
-
+function http_error($message)
+{
+    header("Content-type: text/plain");
+    die($message);
+}
 
 
 
