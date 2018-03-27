@@ -2,7 +2,10 @@
 
 function redirect($note, $url){
     echo $note;
-    header("refresh: 2; url = $url");
+    echo "<br> Need a new login? Register ";
+    echo <<<HTML
+<a href="index.html">here</a>
+HTML;
     exit();
 }
 
