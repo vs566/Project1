@@ -1,4 +1,7 @@
-
+<?php
+  session_start(); // must be before any output
+  $fname = $_SESSION['fname'];
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
